@@ -1,4 +1,4 @@
-# criar uma Função que recebe uma lista fazia e permite adicionar 5 elementos nela, ao final exibir essa lista ao usuário
+# criar uma Função que recebe uma lista vazia e permite adicionar 5 elementos nela, ao final exibir essa lista ao usuário
 
 def retornaLista(lista):
     itens = 1
