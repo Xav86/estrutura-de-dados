@@ -1,14 +1,14 @@
 # função que recebe uma lista de numeros inteiros e retorna uma nova lista
 
-def listaNumero(list):
-    i = 0
-    listPar = []
-    for i in list:
-        if list[i] % 2 == 0:
-            listPar.insert(list[i])
+def lista_numero(lista):
+    lista_par = []
+    for i in lista:
+        if i % 2 == 0:
+            lista_par.append(i)
+    return lista_par
 
-list = [1,2,3,4,5,6,7,8,9,10]
+lista = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
 
-result = listaNumero(list)
+result = lista_numero(lista)
 
 print(result)
