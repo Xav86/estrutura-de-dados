@@ -7,7 +7,8 @@ class Livro:
         self.disponivel = disponivel
     
     def exibirDetalhes(self):
-        print(f"Título: {self.titulo}, Autor: {self.autor}, Disponível: {self.disponivel}")
+        print(f"Titulo: {self.titulo}, Autor: {self.autor}, Disponivel: {self.disponivel}")
+        return
         
 class Usuario:
     def __init__(self, nome, livrosEmprestados):
@@ -21,22 +22,22 @@ class Usuario:
         print('a')
         
 class Biblioteca:
-    def __init__(self, nome, livro: Livro):
+    def __init__(self, nome):
         self.nome = nome
-        self.livro = livro
+        self.livro = []
         
     def adicionarLivro(self, livro):
-        print('a')
+        self.livro.append(livro)
         
-    def exibirLivrosDisponiveis():
-        print('a')
-        
+    def exibirLivrosDisponiveis(self):
+        for livro in self.livro:
+            livro.exibirDetalhes()
 
-livrosLista = []
 
-livrosLista.append(Livro('Livro legal', 'Gustavo', True))
-livrosLista.append(Livro('Livro legal2', 'Gustavo2', False))
-livrosLista.append(Livro('Livro legal3', 'Gustavo3', True))
+biblioteca = Biblioteca("Biblioteca")
 
-for livro in livrosLista:
-    livro.exibirDetalhes()
+biblioteca.adicionarLivro(Livro('Livro legal', 'Gustavo', True))
+biblioteca.adicionarLivro(Livro('Livro legal2', 'Gustavo2', False))
+biblioteca.adicionarLivro(Livro('Livro legal3', 'Gustavo3', True))
+
+biblioteca.exibirLivrosDisponiveis()
