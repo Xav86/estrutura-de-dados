@@ -35,9 +35,9 @@ class VetorNaoOrdenado:
             self.ultimaPosicao -= 1
 
 
-
-
 ######## PARTE 1 
+
+
 # meuVetor = VetorNaoOrdenado(7)
 # meuVetor.imprimir()
 
@@ -62,26 +62,48 @@ class VetorNaoOrdenado:
 
 # meuVetor.imprimir()
 
+
 ######### PARTE 2
 
-meuVetor = VetorNaoOrdenado(7)
+
+# meuVetor = VetorNaoOrdenado(7)
+# meuVetor.imprimir()
+
+# sequencia = 'SATC'
+
+# for i in sequencia:
+#     meuVetor.inserir(i)
+    
+# meuVetor.imprimir()
+
+# a. ultimaPosicao
+# b. 4 posição
+# c. sera preciso 4, pesquisar pelo elemento seguinte e realocar uma posição para tras, e a mesma coisa para o seguinte, somando 4
+
+#meuVetor.excluir('A')
+#print('---')
+
+# d. Posição 0 | Valor S
+#    Posição 1 | Valor T
+#    Posição 2 | Valor C
+
+#meuVetor.imprimir()
+
+#e. 3 posição
+#f. não retornar -1, ou melhor, retornar a posição do dado
+
+
+############ PARTE 3
+
+
+meuVetor = VetorNaoOrdenado(5)
 meuVetor.imprimir()
 
-sequencia = 'SATC'
+sequencia = [5, 4, 3, 2]
 
 for i in sequencia:
     meuVetor.inserir(i)
     
 meuVetor.imprimir()
 
-# a. ultimaPosicao
-# b. 4 posição
-# c. sera preciso 4, pesquisar pelo elemento seguinte e realocar uma posição para tras, e a mesma coisa para o seguinte, somando 4
-meuVetor.excluir('A')
-print('---')
-# d. Posição 0 | Valor S
-#    Posição 1 | Valor T
-#    Posição 2 | Valor C
-meuVetor.imprimir()
-#e. 3 posição
-#f. não retornar -1, ou melhor, retornar a posição do dado
+# Vou anexar um docs com os desenho da parte 3, pode conferir ai
