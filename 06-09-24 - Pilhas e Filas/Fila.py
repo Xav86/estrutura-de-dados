@@ -54,9 +54,9 @@ class Fila:
             elementos_impressos = 0
             while elementos_impressos < self.elementos:
                 print(self.valores[i], end=" ")
-                i = (i + 1) % self.capacidade  # Avança circularmente
+                i = (i + 1) % self.capacidade
                 elementos_impressos += 1
-            print()  # Quebra de linha após impressão
+            print()
         
 
 # Exemplo de uso:
@@ -65,11 +65,14 @@ minhaFila = Fila(5)
 minhaFila.enfileirar(10)
 minhaFila.enfileirar(20)
 minhaFila.enfileirar(30)
-minhaFila.imprimir()  # Saída esperada: 10 20 30
+
+minhaFila.imprimir()
 
 minhaFila.desenfileirar()
-minhaFila.imprimir()  # Saída esperada: 20 30
+
+minhaFila.imprimir() 
 
 minhaFila.enfileirar(40)
 minhaFila.enfileirar(50)
-minhaFila.imprimir()  # Saída esperada: 20 30 40 50
+
+minhaFila.imprimir()
