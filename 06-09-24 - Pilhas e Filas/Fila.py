@@ -59,20 +59,65 @@ class Fila:
             print()
         
 
-# Exemplo de uso:
-minhaFila = Fila(5)
+# minhaFila = Fila(5)
 
-minhaFila.enfileirar(10)
-minhaFila.enfileirar(20)
-minhaFila.enfileirar(30)
+# minhaFila.enfileirar(10)
+# minhaFila.enfileirar(20)
+# minhaFila.enfileirar(30)
 
-minhaFila.imprimir()
+# minhaFila.imprimir()
 
+# minhaFila.desenfileirar()
+
+# minhaFila.imprimir() 
+
+# minhaFila.enfileirar(40)
+# minhaFila.enfileirar(50)
+
+# minhaFila.imprimir()
+
+# NUMERO 1
+
+minhaFila = Fila(7)
+
+# A
 minhaFila.desenfileirar()
 
-minhaFila.imprimir() 
+# B
+meuNome = 'Gustavo'
+for i in meuNome:
+    minhaFila.enfileirar(i)
+    minhaFila.imprimir()
+    
+# C
+minhaFila.enfileirar('qualquerCoisa')
 
-minhaFila.enfileirar(40)
-minhaFila.enfileirar(50)
+# D
+primeiroElemento = minhaFila.verPrimeiro()
+print('primeiro elemento', primeiroElemento)
+
+# E
+for i in range(3):
+    minhaFila.desenfileirar()
+
+primeiroElemento = minhaFila.verPrimeiro()
+print('primeiro elemento agora', primeiroElemento)
 
 minhaFila.imprimir()
+
+# NUMERO 2
+# Envolve primeiro saber se a pilha esta cheia, se não estiver tem que saber qual a ultima posição de self.final, pra não passar da capacidade da fila, voltando ela pro inicio da fila
+# aquele negócio de ser circular
+
+# NUMERO 3
+# Mais ou menos como enfileirar, se que aqui temover que ver se a fila esta vazia, senão estiver temos que saber qual o primeiro elemento para removelo e isso levando em conta que não passou
+# do tamanho da fila que é a capacidade manteindo o negócio circular
+
+# NUMERO 4
+# Se o numero de elementos na fila for 0
+
+# NUMERO 5
+# se o numero de elementos é igual a capacidade maxima
+
+# NUMERO 6
+# vai ta no word q vou envia junto
