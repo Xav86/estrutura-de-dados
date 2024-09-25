@@ -76,27 +76,81 @@ class ListaEncadeada:
 minhaLista = ListaEncadeada()
 
 
-for i in range(10):
+# for i in range(10):
+#     minhaLista.inserirInicio(i)
+
+# minhaLista.mostrar()
+
+# minhaLista.excluirInicio()
+
+# print('-----')
+
+# minhaLista.mostrar()
+
+# print('-----')
+
+# minhaLista.excluirPosicao(6)
+
+# minhaLista.mostrar()
+
+# print('-----')
+
+# noEncontrado = minhaLista.pesquisar(24324)
+# if (noEncontrado == None):
+#     print('nada aqui')
+# else:
+#     print(noEncontrado.valor)
+
+# NUMERO 1
+
+# A
+meuNome = 'Gustavo' 
+
+for i in meuNome:
     minhaLista.inserirInicio(i)
+    minhaLista.mostrar()
 
+print('---')
+
+# B
 minhaLista.mostrar()
 
-minhaLista.excluirInicio()
+# C
+# minhaLista.excluirInicio()
 
-print('-----')
+print('---')
 
+# D
 minhaLista.mostrar()
 
-print('-----')
-
-minhaLista.excluirPosicao(6)
-
-minhaLista.mostrar()
-
-print('-----')
-
-noEncontrado = minhaLista.pesquisar(24324)
+# E
+noEncontrado = minhaLista.pesquisar('o')
 if (noEncontrado == None):
     print('nada aqui')
 else:
     print(noEncontrado.valor)
+
+# F
+minhaLista.excluirPosicao(4)
+
+print('---')
+
+minhaLista.mostrar()
+
+# NUMERO 2
+#docs
+
+# NUMERO 3
+#docs
+ 
+# NUMERO 4
+# no método inserirInicio
+
+# NUMERO 5
+# nó?
+
+# NUMERO 6
+# se o primeiro elemento for = None
+
+# NUMERO 7
+# se o proximo valor for igual a None 
