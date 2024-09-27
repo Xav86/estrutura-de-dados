@@ -121,32 +121,82 @@ class ListaEncadeada:
 
 minhaLista = ListaEncadeada()
 
-for i in range(5):
-    minhaLista.inserirInicio(i)
+# for i in range(5):
+#     minhaLista.inserirInicio(i)
     
-for i in range(5):
-    minhaLista.inserirFinal(i)
+# for i in range(5):
+#     minhaLista.inserirFinal(i)
 
-minhaLista.mostrarInicio()
+# minhaLista.mostrarInicio()
+# minhaLista.mostrarFinal()
+
+# minhaLista.excluirInicio()
+# minhaLista.excluirFinal()
+
+# print('-----')
+
+# minhaLista.mostrarInicio()
+
+# print('-----')
+
+# minhaLista.excluirPosicao(6)
+
+# minhaLista.mostrarFinal()
+
+# print('-----')
+
+# noEncontrado = minhaLista.pesquisar(7)
+# if (noEncontrado == None):
+#     print('nada aqui')
+# else:
+#     print(noEncontrado.valor)
+
+# NUMERO 1
+
+# A
+meuNome = 'Gustavo' 
+
+for i in meuNome:
+    minhaLista.inserirInicio(i)
+    minhaLista.mostrarInicio()
+
+print('---')
+
+# B
 minhaLista.mostrarFinal()
 
+# C
 minhaLista.excluirInicio()
-minhaLista.excluirFinal()
 
-print('-----')
+print('---')
 
+# D
 minhaLista.mostrarInicio()
 
-print('-----')
-
-minhaLista.excluirPosicao(6)
-
-minhaLista.mostrarFinal()
-
-print('-----')
-
-noEncontrado = minhaLista.pesquisar(7)
+# E
+noEncontrado = minhaLista.pesquisar('o')
 if (noEncontrado == None):
     print('nada aqui')
 else:
     print(noEncontrado.valor)
+
+# F
+minhaLista.excluirPosicao(4)
+
+print('---')
+
+minhaLista.mostrarInicio()
+
+# NUMERO 2 e 3 na folha
+
+# NUMERO 4
+#pelo começo e pelo final
+
+# NUMERO 5
+#primeiro e ultimo
+
+# NUMERO 6
+# se o primeiro elemento for igual a None
+
+# NUMERO 7
+# se o proximo elemento for None
