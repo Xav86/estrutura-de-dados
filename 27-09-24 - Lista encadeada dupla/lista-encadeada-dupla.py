@@ -26,8 +26,9 @@ class ListaEncadeada:
             self.ultimo = novo
         else:
             self.primeiro.anterior = novo
-            novo.proximo = self.primeiro
-            self.primeiro = novo
+            
+        novo.proximo = self.primeiro
+        self.primeiro = novo
         
     def inserirFinal(self, valor):
         
