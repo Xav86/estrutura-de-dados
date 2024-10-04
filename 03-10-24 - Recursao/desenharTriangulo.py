@@ -1,5 +1,12 @@
+# triangulo
 
 def triangulo(valor):
-    print(valor)
     
-triangulo('valor')
+    if(valor == 0):
+        return
+    
+    triangulo(valor - 1)
+    
+    print('*' * valor)
+    
+triangulo(5)
