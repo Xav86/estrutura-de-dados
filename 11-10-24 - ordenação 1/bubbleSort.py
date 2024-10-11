@@ -9,3 +9,6 @@ def bubleSort(lista):
     return lista
 
 
+listaOrdenada = bubleSort([2, 6, 234, 1, 34543, 5])
+
+print(listaOrdenada)
