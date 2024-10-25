@@ -40,3 +40,20 @@ class ArvoreBinariaBusca:
                     if atual == None:
                         pai.direita = novo
                         return
+                    
+    def pesquisar(self, valor):
+        atual = self.raiz
+        while atual.valor != valor:
+            if valor < atual.esquerda:
+                atual = atual.esquerda
+            else:
+                atual = atual.direita
+            
+            if atual == None:
+                return None
+            
+        return atual
+    
+
+    #raiz, esquerda, direita
+    
