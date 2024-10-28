@@ -56,4 +56,23 @@ class ArvoreBinariaBusca:
     
 
     #raiz, esquerda, direita
+    def preOrdem(self, no):
+        if no != None:
+            print(no.valor)
+            self.preOrdem(no.esquerda)
+            self.preOrdem(no.direita)
+
+    #esquerda, raiz, direita
+    def emOrdem(self, no):
+        if no != None:
+            self.emOrdem(no.esquerda)
+            print(no.valor)
+            self.emOrdem(no.direita)
+
+    def posOrdem(self, no):
+        if no != None:
+            self.posOrdem(no.esquerda)
+            self.posOrdem(no.direita)
+            print(no.valor)
+    
     
