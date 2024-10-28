@@ -75,4 +75,41 @@ class ArvoreBinariaBusca:
             self.posOrdem(no.direita)
             print(no.valor)
     
-    
+    def excluir(self, valor):
+        if self.raiz == None:
+            print('A arvore esta vazia')
+            return
+
+        #encontrar o nó
+        atual = self.raiz
+        pai = self.raiz
+        e_esquerda = True
+
+        while atual.valor != valor:
+            pai = atual
+            
+            #esquerda
+            if valor < atual.valor:
+                e_esquerda = True
+                atual = atual.esquerda
+            #direita
+            else:
+                e_esquerda = False
+                atual = atual.direita
+            
+            if atual == None:
+                return False
+            
+        #o nó a ser apagado é uma folha
+        if (atual.esquerda) == None and atual.direita == None:
+            if atual == self.raiz:
+                self.raiz = None
+            elif e_esquerda == True:
+                pai.esquerda = None
+            else:
+                pai.direita = None
+            
+        #o nó a ser apagado não possui filho a direta
+        elif atual.direta == None:
+            if atual == self.raiz:
+                self.raiz = atual.esuqerda
