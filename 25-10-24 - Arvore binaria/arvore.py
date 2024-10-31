@@ -113,3 +113,47 @@ class ArvoreBinariaBusca:
         elif atual.direta == None:
             if atual == self.raiz:
                 self.raiz = atual.esuqerda
+            elif e_esquerda == True:
+                pai.esquerda = atual.esquerda
+            else:
+                pai.direita = atual.esquerda
+            
+        #o nó a ser apagado não possui filho a esquerda
+        elif atual.esquerda == None:
+            if atual == self.raiz:
+                self.raiz = atual.direita
+            elif e_esquerda == True:
+                pai.esquerda = atual.direita
+            else:
+                pai.direita = atual.direita
+        
+        #o nó possui dois filhos :O
+        else:
+            sucessor = self.getSucessor(atual)
+            if atual == self.raiz:
+                self.raiz = sucessor
+            elif e_esquerda == True:
+                pai.esquerda = sucessor
+            else:
+                pai.direita = sucessor
+            
+            sucessor.esquerda = atual.esquerda
+            
+        return True
+
+    def getSucessor(self, no):
+        paiSucessor = no
+        sucessor = no
+        atual = no.direita
+
+        while atual != None:
+            paiSucessor = sucessor
+            sucessor = atual
+            atual = atual.esquerda
+        
+        if sucessor != no.direita:
+            paiSucessor.esquerda = sucessor.direita
+            sucessor.direita = no.direita
+        
+        return sucessor
+        
